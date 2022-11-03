@@ -266,8 +266,10 @@ getUsersCompany(users, 1)
 
 function changePhone(array, id, phone) {
  return array.map(function (element) {
-    if (element.id = id)
+    if (element.id === id)
   return element.phone = phone
   })
 }
 
+changePhone(users, 9, '123 - 555- 666- 7323277')
+console.log(users[8].phone)
